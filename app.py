@@ -139,7 +139,7 @@ def process_pdf(pdf_path, mode):
     rect = fitz.Rect(*config["rect"])
     first_page.draw_rect(rect, color=(1, 1, 1), fill=(1, 1, 1))
 
-    font_path = "Sarabun-Thin.ttf"
+    font_path = "Sarabun-Regular.ttf"
     first_page.insert_font("THSarabun", fontfile=font_path)
 
     y = config["text_y"]
